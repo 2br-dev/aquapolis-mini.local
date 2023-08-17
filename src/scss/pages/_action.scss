@@ -1,0 +1,258 @@
+main#action{
+
+	& > section{
+		margin: 2vmax 0;
+	}
+
+	& .product-images{
+
+		background-image: url(/img/pattern.svg);
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+
+		& .type-icon-wrapper{
+
+			position: absolute;
+
+			& .type-icon{
+
+				width: 60px;
+				aspect-ratio: 1 / 1;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+
+				&.thawed{
+					background-image: url(/img/thawed.svg);
+				}
+				
+				&.arthesian{
+					background-image: url(/img/arthesian.svg);
+				}
+			}
+		}
+
+		& .swiper{
+
+			& img{
+				display: block;
+				width: 100%;
+				object-fit: contain;
+				object-position: center center;
+				aspect-ratio: 1 / 1;
+			}
+		}
+	}
+
+	& .product-details{
+
+		& .action-label{
+			display: inline-block;
+			line-height: 1.6em;
+			padding: 0 1em;
+			border-radius: 2em;
+			text-transform: uppercase;
+			font-weight: 800;
+			color: #fff;
+			background: linear-gradient(to bottom, $secondary, $primary);
+		}
+
+		& h1{
+			margin: 0;
+		}
+
+		& .prices{
+	
+			display: flex;
+			flex-wrap: wrap;
+	
+			& .price{
+				margin: 20px 0;
+				margin-right: 30px;
+				width: fit-content;
+	
+				& .price-title{
+					font-size: 14px;
+					line-height: 1.4em;
+					color: $fogged;
+				}
+	
+				& .price-value{
+					font-size: 3rem;
+					font-weight: 700;
+					line-height: 1em;
+
+					&.new-price{
+						font-weight: 800;
+						color: $success;
+					}
+
+					&.old-price{
+						color: rgba($fogged, .5);
+						position: relative;
+						&:before{
+							content: '';
+							display: block;
+							width: 100%;
+							height: 2px;
+							background-color: $critical;
+							top: calc(50% - 1px);
+							left: 0;
+							position: absolute;
+							pointer-events: none;
+						}
+					}
+
+					& .rur-sign{
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	
+		& .note{
+	
+			margin: 20px 0;
+	
+			& + .divider{
+				width: 80%;
+				margin: 40px 0;
+			}
+		}
+
+		& .action-calculator{
+
+			& ul{
+				margin-top: 0;
+			}
+
+			& .col{
+				padding-bottom: initial;
+			}
+		}
+	}
+
+	& .address-popup-wrapper{
+
+		& li{
+
+			position: relative;
+			width: fit-content;
+
+			& .address-popup{
+
+				position: absolute;
+				padding: 10px;
+				border-radius: $border-radius;
+				background: #fff;
+				left: 40px;
+				bottom: 100%;
+				transform: translateY(20px);
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity .2s, transform .2s;
+				z-index: 20;
+
+				@media(max-width: $medium){
+					display: none;
+				}
+
+				& .name{
+					font-weight: 600;
+				}
+
+				& .kv-pair{
+					display: table-row;
+
+					& .key, & .value{
+						display: table-cell;
+						white-space: nowrap;
+					}
+
+					& .key{
+						padding-right: 10px;
+					}
+
+					& .value{
+						font-weight: 500;
+					}
+				}
+				& a{
+					font-weight: 600;
+				}
+			}
+
+			&:hover{
+
+				& > a{
+					text-decoration: underline;
+				}
+
+				& .address-popup{
+					opacity: 1;
+					pointer-events: all;
+					transform: none;
+				}
+			}
+		}
+	}
+
+	& ul.product-tabs{
+		border: 1px solid #ccc;
+		box-shadow: 0 4px 12px rgba(black, .1) inset;
+		background-color: $menu_hover;
+		margin: 0;
+		display: flex;
+		border-radius: 2rem;
+		position: relative;
+		overflow: hidden;
+		
+		& .product-tab{
+
+			display: block;
+			position: relative;
+			z-index: 2;
+			
+			& a{
+				display: block;
+				font-size: 1.2rem;
+				line-height: 2em;
+				padding: 0 1em;
+				border-radius: 2rem;
+				transition: background-color .2s;
+				white-space: nowrap;
+				color: $text;
+				font-weight: 500;
+				text-align: center;
+				
+				&:hover{
+					background-color: $menu_hover;
+				}
+
+			}
+			&.active a{
+				color: $primary;
+			}
+
+			@media(max-width: $medium){
+				flex-grow: 1;
+			}
+		}
+		
+		& .indicator{
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			border-radius: 1.6rem;
+			background: #fff;
+			box-shadow: 0 0 4px rgba(black, .2);
+		}
+	}
+
+	& .tabs-content{
+		padding: 20px 0;
+	}
+}

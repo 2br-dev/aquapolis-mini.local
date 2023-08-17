@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="/css/master.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row flex vcenter">
+                    <div class="col t3 xs3">
+                        <a href="/" class="logo"></a>
+                    </div>
+                    <div class="col t9 xs9 right-align header-blocks-wrapper">
+                        <ul class="header-block">
+                            <li class="affiliate-desktop">
+                                <a href="javascript:void(0)" class="content selector"><span>г. Славянск-на-Кубани</span><i class="mdi mdi-menu-down"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="">Анапа</a></li>
+                                    <li><a href="">Новороссийск</a></li>
+                                    <li><a href="">Крымск</a></li>
+                                    <li><a href="">Абинск</a></li>
+                                    <li><a href="">Славянск-на-Кубани</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="header-block">
+                            <li>
+                                <a href="/checkout.html" class="content"><span>2 / 2 100 <span class="rur-sign">₽</span></span><i class="mdi mdi-cart"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="header-block">
+                            <li>
+                                <a href="javascript:void(0);" class="content"><span>Гость</span><i class="mdi mdi-account"></i></a>
+                                <!-- Действия для незарегистрированного пользователя -->
+                                <ul class="dropdown">
+                                    <li><a href="#login" class="modal-trigger waves-effect">Авторизация</a></li>
+                                    <li><a href="#register" class="modal-trigger waves-effect">Регистрация</a></li>
+                                </ul>
+                                <!-- / Действия для незарегистрированного пользователя -->
+                                <!-- Действия для зарегистрированного пользователя -->
+                                <ul class="dropdown hide">
+                                    <li><a href="javascript:void(0);">Мой балланс: 20₽</a></li>
+                                    <li><a href="/profile.html">Мой профиль</a></li>
+                                    <li><a href="/profile.html">Мои заказы</a></li>
+                                    <li><a href="/">Выйти</a></li>
+                                </ul>
+                                <!-- / Действия для зарегистрированного пользователя -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Форма авторизации -->
+    <form class="modal" id="login">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col">
+                    <a href="#!" class="modal-close"><i class="mdi mdi-close"></i></a>
+                    <p class="modal-header">Авторизация</p>
+                </div>
+                <div class="col">
+                    <div class="input-container">
+                        <label for="">Логин</label>
+                        <input type="text" placeholder="Логин" class="styled">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-container">
+                        <label for="">Пароль</label>
+                        <input type="password" placeholder="Пароль" class="styled">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="bttn-outline modal-trigger modal-close" href="#register">Зарегистрироваться</a>
+            <a class="bttn center" href="/profile.html">Войти</a>
+        </div>
+    </form>
+
+    <!-- Форма регистрации -->
+    <form class="modal" id="register">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12">
+                    <p class="modal-header">Регистрация</p>
+                    <a href="#!" class="modal-close"><i class="mdi mdi-close"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div class="type">
+                        <div class="type-selector">
+                            <input type="radio" value="phisical" name="account-type" checked id="type1" class="styled">
+                            <label for="type1">Физическое лицо</label>
+                        </div>
+                        <div class="type-selector">
+                            <input type="radio" value="law" name="account-type" id="type2" class="styled">
+                            <label for="type2">Юридическое лицо</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" data-mode="phisical" id="fieldset">
+                <div class="col l4 m6 s12 law">
+                    <div class="input-container">
+                        <label for="">Организация</label>
+                        <input type="text" class="styled" placeholder="Организация">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <div class="input-container">
+                        <label for="">Фамилия</label>
+                        <input type="text" class="styled" placeholder="Фамилия">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <div class="input-container">
+                        <label for="">Имя</label>
+                        <input type="text" class="styled" placeholder="Имя">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <div class="input-container">
+                        <label for="">Отчество</label>
+                        <input type="text" class="styled" placeholder="Отчество">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <div class="input-container">
+                        <label for="">Телефон</label>
+                        <input type="text" class="styled phone" placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12 law">
+                    <div class="input-container">
+                        <label for="">ИНН</label>
+                        <input type="text" class="styled" placeholder="ИНН">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12 law">
+                    <div class="input-container">
+                        <label for="">ОГРН/ОГРИП</label>
+                        <input type="text" class="styled" placeholder="ОГРН/ОГРИП">
+                    </div>
+                </div>
+                <div class="col l8 m6 s12">
+                    <div class="input-container">
+                        <label for="">E-mail</label>
+                        <input type="email" class="styled" placeholder="E-mail">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l4 m6 s12">
+                    <div class="input-container">
+                        <label for="">Пароль</label>
+                        <input type="password" class="styled" placeholder="Пароль">
+                    </div>
+                </div>
+                <div class="col l4 m6 s12">
+                    <div class="input-container">
+                        <label for="">Подтверждение</label>
+                        <input type="password" class="styled" placeholder="Подтверждение">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="note">
+                        Нажимая кнопку «Регистрация», я принимаю условия <a href="/agreement.html">Пользовательского соглашения</a>
+                        и даю своё согласие на обработку персональных данных Интернет-магазин Акваполис и ИП Зюлев В.П., в соответствии с <a href="http://www.consultant.ru/document/cons_doc_LAW_61801/">Федеральным законом</a>
+                        от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных <a href="/policy.html">Политикой конфиденциальности</a>
+                        и Политикой в отношении обработки персональных данных</p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a class="bttn-outline modal-trigger modal-close" href="#login">Авторизация</a>
+            <a class="bttn" href="/profile.html">Регистрация</a>
+        </div>
+    </form>
+    <main id="profile">
+        <div class="container">
+            <div class="row flex">
+                <div class="col s12">
+                    <div class="underline-wrapper">
+                        <h1>Личный кабинет</h1>
+                    </div>
+                </div>
+                <div class="col xl3 l4 m12 order-l1">
+                    <div class="row">
+                        <div class="col l12 m5">
+                            <div class="underline-wrapper" id="ballance">
+                                <h2>
+                                    Лицевой счет
+                                </h2>
+                            </div>
+                            <div class="ballance-block">
+                                <div class="ballance">
+                                    <strong>Балланс: 240<span class="rur-sign">₽</span></strong>
+                                </div>
+                                <div class="action">
+                                    <a class="bttn-outline float-right waves-effect waves-light">Пополнить</a>
+                                </div>
+                            </div>
+                            <div class="ballance-block">
+                                <div class="ballance">
+                                    <strong>История операций</strong>
+                                </div>
+                                <div class="action">
+                                    <a class="bttn-outline underlined" href="/history.html">Смотреть</a>
+                                </div>
+                            </div>
+                            <div class="ballance-block">
+                                <div class="ballance input-field">
+                                    <input type="text" class="styled" placeholder="Кол-во ">
+                                    <label for="">Кол-во бутылок</label>
+                                </div>
+                                <div class="action"><a class="bttn-outline" href="#!">Сохранить</a></div>
+                            </div>
+                        </div>
+                        <div class="col l12 m7">
+                            <div class="underline-wrapper">
+                                <h2>Профиль</h2>
+                            </div>
+                            <div class="row">
+                                <div class="col xl4 l6 m6 s4 xs6 t12">
+                                    <div class="input-field"><input class="styled" type="text" placeholder="Фамилия"><label for="">Фамилия</label></div>
+                                </div>
+                                <div class="col xl4 l6 m6 s4 xs6 t12">
+                                    <div class="input-field"><input class="styled" type="text" placeholder="Имя"><label for="">Имя</label></div>
+                                </div>
+                                <div class="col xl4 l12 m6 s4 xs6 t12">
+                                    <div class="input-field"><input class="styled" type="text" placeholder="Отчество"><label for="">Отчество</label></div>
+                                </div>
+                                <div class="col xl4 l12 m6 s4 xs6 t12">
+                                    <div class="input-field"><input class="styled" type="phone" placeholder="Телефон"><label for="">Телефон</label></div>
+                                </div>
+                                <div class="col xl8 l12 s8">
+                                    <div class="input-field"><input class="styled" type="text" placeholder="E-mail"><label for="">E-mail</label></div>
+                                </div>
+                                <div class="col s12">
+                                    <input type="radio" class="styled" name="user-type" id="phisical" checked>
+                                    <label for="phisical">Физическое лицо</label>
+                                    <input type="radio" class="styled" name="user-type" id="law">
+                                    <label for="law">Юридическое лицо</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="checkbox-wrapper">
+                                        <input type="checkbox" class="styled" id="change-password-trigger"><label for="change-password-trigger">Изменить пароль</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" id="change-password">
+                                <div class="col m6 s6">
+                                    <div class="input-field"><input type="password" class="styled" placeholder="Пароль"><label for="">Пароль</label></div>
+                                </div>
+                                <div class="col m6 s6">
+                                    <div class="input-field"><input type="password" class="styled" placeholder="Подтверждение"><label for="">Подтверждение</label></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <a href="javascript:void(0);" class="bttn float-right waves-effect waves-light">Сохранить</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xl8 l8 offset-xl1 m12 s12">
+                    <div class="underline-wrapper">
+                        <h2>Мои заказы</h2>
+                    </div>
+                    <table class="orders-table">
+                        <thead>
+                            <tr>
+                                <th class="expander">&nbsp</th>
+                                <th>Заказ</th>
+                                <th class="order-date">Дата</th>
+                                <th>Сумма</th>
+                                <th class="order-state">Статус</th>
+                                <th class="order-payment">Способ оплаты</th>
+                                <th>Действия</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="order">
+                                <td class="expander">
+                                    <a class="expander-trigger"></a>
+                                </td>
+                                <td>№23452467</td>
+                                <td class="order-date">1 декабря 2012</td>
+                                <td>240<span class="rur-sign">₽</span></td>
+                                <td class="order-state">Выполнен</td>
+                                <td class="order-payment">Безнал по счету</td>
+                                <td>
+                                    <div class="popup-wrapper">
+                                        <a class="popup-trigger icon more waves-effect waves-dark">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <ul class="popup right">
+                                            <li><a class="waves-effect waves-dark">Изменить адрес доставки</a></li>
+                                            <li><a class="waves-effect waves-dark">Документы</a></li>
+                                            <li><a class="waves-effect waves-dark">Оплатить</a></li>
+                                            <li><a class="waves-effect waves-dark">Повторить</a></li>
+                                            <li><a class="waves-effect waves-dark">Отказаться</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="details">
+                                <td colspan="8">
+                                    <div class="details-content">
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="order">
+                                <td class="expander">
+                                    <a class="expander-trigger"></a>
+                                </td>
+                                <td>№23452467</td>
+                                <td class="order-date">1 декабря 2012</td>
+                                <td>240<span class="rur-sign">₽</span></td>
+                                <td class="order-state">Выполнен</td>
+                                <td class="order-payment">Картой онлайн</td>
+                                <td>
+                                    <div class="popup-wrapper">
+                                        <a class="popup-trigger icon more waves-effect waves-dark">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <ul class="popup right">
+                                            <li><a class="waves-effect waves-dark">Изменить адрес доставки</a></li>
+                                            <li><a class="waves-effect waves-dark">Документы</a></li>
+                                            <li><a class="waves-effect waves-dark">Оплатить</a></li>
+                                            <li><a class="waves-effect waves-dark">Повторить</a></li>
+                                            <li><a class="waves-effect waves-dark">Отказаться</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="details">
+                                <td colspan="8">
+                                    <div class="details-content">
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="order">
+                                <td class="expander">
+                                    <a class="expander-trigger"></a>
+                                </td>
+                                <td>№23452467</td>
+                                <td class="order-date">1 декабря 2012</td>
+                                <td>240<span class="rur-sign">₽</span></td>
+                                <td class="order-state">Выполнен</td>
+                                <td class="order-payment">Наличными курьеру</td>
+                                <td>
+                                    <div class="popup-wrapper">
+                                        <a class="popup-trigger icon more waves-effect waves-dark">
+                                            <i class="mdi mdi-dots-vertical"></i>
+                                        </a>
+                                        <ul class="popup right">
+                                            <li><a class="waves-effect waves-dark">Изменить адрес доставки</a></li>
+                                            <li><a class="waves-effect waves-dark">Документы</a></li>
+                                            <li><a class="waves-effect waves-dark">Оплатить</a></li>
+                                            <li><a class="waves-effect waves-dark">Повторить</a></li>
+                                            <li><a class="waves-effect waves-dark">Отказаться</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="details">
+                                <td colspan="8">
+                                    <div class="details-content">
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                        <p><a href="/product.html" class="underlined">Вода «Кубай»</a> (2шт) – 240<span class="rur-sign">₽</span> (120<span class="rur-sign">₽</span>/шт.)</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row no-margin">
+                <div class="col xl2 l12">
+                    <a href="/" class="footer-logo"></a>
+                </div>
+                <div class="col xl3 l4 m6 s6">
+                    <ul class="no-margin">
+                        <li><a href="/policy.html">Политика конфиденциальности</a></li>
+                        <li><a href="/agreement.html">Пользовательское соглашение</a></li>
+                        <li><a href="/collect.html">Согласие на сбор и обработку персональных данных</a></li>
+                    </ul>
+                </div>
+                <div class="col xl3 l4 m6 s6">
+                    <div class="row">
+                        <div class="social-media">
+                            <ul class="no-margin">
+                                <li><a target="_blank" rel="nofollow" href="tel://79186622880"><i class="mdi mdi-phone"></i><span>(918) 66-22-880</span></a></li>
+                                <li><a target="_blank" rel="nofollow" href="mailto:voda-plus@mail.ru"><i class="mdi mdi-email-open"></i><span>voda-plus@mail.ru</span></a></li>
+                                <li><a target="_blank" rel="nofollow" href="https://t.me/+79887690030"><i class="mdi mdi-telegram"></i><span>Telegram</span></a></li>
+                            </ul>
+                            <ul class="no-margin">
+                                <li><a target="_blank" rel="nofollow" href="https://wa.me/+79887690030"><i class="mdi mdi-whatsapp"></i><span>WhatsApp</span></a></li>
+                                <li><a target="_blank" rel="nofollow" href="https://vk.com/aqua.polis"><i class="mdi mdi-vk"></i><span>ВКонтакте</span></a></li>
+                                <li><a target="_blank" rel="nofollow" href="https://ok.ru/group/70000002215598"><i class="mdi mdi-odnoklassniki"></i><span>Одноклассники</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col xl4 l4 m12">
+                    <p class="no-margin">
+                        Установите наше мобильное приложение, которое позволит быстро и удобно пользоваться услугами сервиса доставки питьевой воды «Акваполис».
+                    </p>
+                    <p>
+                        <a href="https://apps.apple.com/ru/app/id6453854456" class="bttn-outline"><i class="mdi mdi-apple"></i><span>AppStore</span></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.rsm.shop.otido" class="bttn-outline"><i class="mdi mdi-google-play"></i><span>Google Play</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-copyright">
+        <div class="year">
+            © <span id="year-value"></span>
+        </div>
+    </div>
+    <script src="/js/master.js"></script>
+</body>
+
+</html>

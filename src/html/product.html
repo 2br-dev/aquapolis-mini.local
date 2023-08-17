@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./parts/head.html', {title: "Главная"})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="product">
+		<section id="main-data">
+			<div class="row rectangle-wrapper">
+				<div class="col m5"></div>
+			</div>
+			<div class="container">
+				<div class="row flex vcenter">
+					<div class="col xl5 l6 offset-xl1 m5 s8 offset-s2 xs10 offset-xs1">
+						<div class="img-wrapper">
+							<img alt="" class="lazy product-image responsive-img" data-src="/img/bottles/arhyz_legend.png">
+						</div>
+					</div>
+					<div class="col xl5 l5 offset-xl1 m7">
+						<h1>Архыз «Легенда гор»</h1>
+						<p class="price-header">Цена с доставкой</p>
+						<div class="prices">
+							<div class="price">
+								<div class="price-title">за 1 бутыль</div>
+								<div class="price-value">210<span class="rur-sign">₽</span>*</div>
+							</div>
+							<div class="price">
+								<div class="price-title">от 2х бутылей</div>
+								<div class="price-value">190<span class="rur-sign">₽</span>*</div>
+							</div>
+							<div class="price">
+								<div class="price-title">от 3х бутылей</div>
+								<div class="price-value">180<span class="rur-sign">₽</span>*</div>
+							</div>
+						</div>
+						<p class="note">* Цена указана при наличии оборотной тары</p>
+						@@include('./parts/smart-bttn.html', {text: "В корзину"})
+						<p class="price-header">Цена с самовывозом</p>
+						<div class="prices">
+							<div class="price">
+								<div class="price-title">за 1 бутыль</div>
+								<div class="price-value">140<span class="rur-sign">₽</span>*</div>
+							</div>
+						</div>
+						<p class="note">* Цена указана при наличии оборотной тары</p>
+						<div class="divider"></div>
+						<input type="checkbox" class="styled" id="include_empty"><label for="include_empty">Включить в заказ пустую тару</label>
+						<p><strong>Доставка осуществляется бесплатно</strong> в черте города при заказе от 2х бутылей. При доставке в отдалённые раёоны стоимость доставки может измениться.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="description">
+			<div class="container">
+				<div class="row">
+					<div class="col l8 offset-l2 m10 offset-m1 s12">
+						<ul class="product-tabs">
+							<li class="product-tab active"><a href="#desc">
+								<span class="mdi mdi-comment-text-outline hide-m-down"> Описание</span>
+								<span class="mdi mdi-comment-text-outline hide-m-up"></span>
+							</a></li>
+							<li class="product-tab"><a href="#char">
+								<span class="mdi mdi-view-list hide-m-down"> Характеристики</span>
+								<span class="mdi mdi-view-list hide-m-up"></span>
+							</a></li>
+							<li class="product-tab"><a href="#docs">
+								<span class="mdi mdi-file-document-outline hide-m-down"> Документы</span>
+								<span class="mdi mdi-file-document-outline hide-m-up"></span>
+							</a></li>
+							<li class="indicator"></li>
+						</ul>
+						<div class="tabs-content">
+							<div class="tab-content hidden" id="desc">
+								<p>
+									«Легенда гор Архыз» добывается на высоте 1507 м над уровнем моря на территории 
+									Государственного Тебердинского Биосферного заповедника в одноименном поселке Архыз. 
+									Проходя через естественный горный фильтр, она слабо минерализуется, обретая 
+									изумительный вкус и уникальные полезные свойства. Образуется в результате таяния 
+									ледников и благодаря этому обладает уникальной структурой, похожей на структуру 
+									воды в организме человека. Поэтому она идеально усваивается и поддерживает 
+									оптимальный водно-минеральный баланс. Содержит 18 природных минералов 
+									и микроэлементов среди которых: магний, кальций, калий, йод.
+								</p>
+							</div>
+							<div class="tab-content hidden" id="char">
+								<div class="chars">
+									<div class="kv-pair">
+										<div class="key">Общая минерализация</div>
+										<div class="unit">(г/л)</div>
+										<div class="value">100</div>
+									</div>
+									<div class="kv-pair">
+										<div class="key">Гидрокарбонаты</div>
+										<div class="unit">(мг/л)</div>
+										<div class="value">50-150</div>
+									</div>
+									<div class="kv-pair">
+										<div class="key">Натрий+Калий</div>
+										<div class="unit">(мг/л)</div>
+										<div class="value">60</div>
+									</div>
+									<div class="kv-pair">
+										<div class="key">Кальций</div>
+										<div class="unit">(мг/л)</div>
+										<div class="value">40</div>
+									</div>
+									<div class="kv-pair">
+										<div class="key">Магний</div>
+										<div class="unit">(мг/л)</div>
+										<div class="value">25</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-content hidden" id="docs">
+								<img alt="" class="thumb zoomer lazy" data-src="/img/certificate.png">
+								<img alt="" class="thumb zoomer lazy" data-src="/img/certificate.png">
+								<img alt="" class="thumb zoomer lazy" data-src="/img/certificate.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		@@include('./parts/shops-block.html')
+		@@include('./parts/products-block.html')
+	</main>
+	@@include('./parts/footer.html')
+	<script src="/js/master.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<div class="swiper-slide">
+	<div class="card-water">
+		@@if(context.labels){
+			<div class="labels">
+				@@for(let i = 0; i < labels.length; i++){
+					<div class="label ` + labels[i].class + `"><span>` + labels[i].text + `</span></div>
+				}
+			</div>
+		}
+		<div class="name-wrapper">
+			<svg viewBox="0 0 50 70">
+				<g transform="translate(50 70)">
+					<text class="name" transform="rotate(-90)">
+						@@name
+					</text>
+				</g>
+			</svg>
+		</div>
+		<div class="image-wrapper">
+			<div class="swiper product-swiper">
+				<div class="swiper-wrapper">
+					@@if(context.images){
+						@@for(let i=0; i<images.length; i++){
+							<a href="@@link" class="swiper-slide lazy" data-bg="` + images[i] + `"></a>
+						}
+					}
+				</div>
+				<div class="product-pagination"></div>
+			</div>
+
+			<div class="product-type @@type.className" title="@@type.label"></div>
+		</div>
+		<div class="product-info">
+			<div class="name"><a href="@@link">@@name</a></div>
+			@@if(context.longName){
+				<div class="longname">@@longName</div>
+			}
+			@@if(context.prices){
+				<div class="prices">
+					@@for(let i=0; i < context.prices.length; i++){
+						<div class="price">
+							<div class="price-header">`+prices[i].prefix+`</div>
+							<div class="price-value">`+prices[i].value+`<span class="rur-sign">₽</span></div>
+						</div>
+					}
+				</div>
+			}
+			<div class="action">
+				<div class="avers"><a href="" class="bttn-outline buy waves-effect">В корзину</a></div>
+				<div class="revers">
+					<form action="">
+						<button href="" class="card-button minus mdi mdi-minus"></button>
+						<input type="number" value="0" min="0" max="99" />
+						<button href="" class="card-button plus i mdi mdi-plus"></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

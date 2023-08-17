@@ -1,0 +1,22 @@
+<section id="shops">
+	<div class="row flex">
+		<div class="col s12 center-align">
+			<h2>Наши магазины</h2>
+		</div>
+		<div class="col xl9 l8 m6 no-padding hide-m-down"><div id="ymap"></div></div>
+		<div class="col xl3 l4 m6 no-padding">
+			<div class="city-wrapper">
+				<div class="cities">
+					@@loop('./shopblock-city.html', '../html/data/cities.json')
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row hide-m-down">
+		<div class="col l12 center-align">
+			<div class="quick-navi">
+				@@loop('./citynav.html', './data/cities.json')
+			</div>
+		</div>
+	</div>
+</section>

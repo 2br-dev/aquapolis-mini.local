@@ -1,0 +1,141 @@
+[
+	{
+		"city": "Анапа",
+		"zindex": 0,
+		"swiperIndex": 1,
+		"center": {
+			"lon": 44.941,
+			"lat": 37.33
+		},
+		"points":"44.891134,37.336481:44.865106,37.355264:45.002448,37.295230",
+		"zoom": 11,
+		"mobile":false,
+		"addresses":[
+			{
+				"image": "/img/fasads/anapa_spassky.jpg",
+				"address": "пер. Спасский д. 16, пом 8",
+				"officeTime": "8:00 — 19:00",
+				"callTime": "8:00 – 20:00",
+				"phone": "+7 (918) 66-22-880",
+				"phoneLink": "tel://+79186622880",
+				"coords": "44.891134,37.336481"
+			},
+			{
+				"image": "/img/fasads/anapa_supseh.jpg",
+				"address": "с. Супсех, ул.Советская д.19.",
+				"officeTime": "8:00 — 19:00",
+				"callTime": "8:00 – 20:00",
+				"phone": "+7 (918) 66-22-880",
+				"phoneLink": "tel://+79186622880",
+				"coords": "44.865106,37.355264"
+			},
+			{
+				"image": "/img/fasads/anapa_vityazevo.jpg",
+				"address": "с. Витязево, ул. 160 лет Витязево, 72",
+				"officeTime": "8:00 — 19:00",
+				"callTime": "8:00 – 20:00",
+				"phone": "+7 (918) 66-22-880",
+				"phoneLink": "tel://+79186622880",
+				"coords": "45.002448,37.295230"
+			}
+		]
+	},
+	{
+		"city": "Крымск",
+		"zindex": 1,
+		"center": {
+			"lon": 44.928114,
+			"lat": 37.979836
+		},
+		"points":"44.928114,37.979836",
+		"zoom": 16,
+		"mobile":false,
+		"addresses":[
+			{
+				"image": "/img/fasads/krymsk.jpg",
+				"address": "ул. Горная 13",
+				"officeTime": "8:00 — 18:00",
+				"callTime": "8:00 – 20:00",
+				"phone": "+7 (918) 66-22-880",
+				"phoneLink": "tel://+79186622880",
+				"coords": "44.928114,37.979836"
+			}
+		]
+	},
+	{
+		"city": "Новороссийск",
+		"zindex": 2,
+		"center": {
+			"lon": 44.757288,
+			"lat": 37.725065
+		},
+		"points": "44.757288,37.725065",
+		"zoom": 16,
+		"mobile":true,
+		"addresses":[
+			{
+				"image": "/img/fasads/novoros.jpg",
+				"address": "с. Цемдолина ул. Ленина, 79",
+				"officeTime": "8:00 — 19:00",
+				"callTime": "8:00 – 20:00",
+				"phone": "+7 (918) 66-22-880",
+				"phoneLink": "tel://+79186622880",
+				"coords": "44.757288,37.725065"
+			}
+		]
+	},
+	{
+		"city": "Абинск",
+		"zindex": 3,
+		"swiperIndex": 2,
+		"center":{
+			"lon": 44.86,
+			"lat": 38.16
+		},
+		"points": "44.861701,38.173468:44.862040,38.143446",
+		"zoom": 15,
+		"mobile":false,
+		"addresses":[
+			{
+				"image": "/img/fasads/abinsk_cemdolina.jpg",
+				"address": "ул. Советов, 38В (Каротажная)",
+				"officeTime": "8:00 — 19:00",
+				"callTime": "8:00 – 20:00",
+				"phone": "+7 (918) 31-65-65-7",
+				"phoneLink": "tel://+79183165657",
+				"coords": "44.861701,38.173468"
+			},
+			{
+				"image": "/img/fasads/abinsk_sovetov.jpg",
+				"address": "ул.Пионерская, 30",
+				"officeTime": "8:00 — 19:00",
+				"callTime": "8:00 – 20:00",
+				"phone": "+7 (918) 31-65-65-7",
+				"phoneLink": "tel://+79183165657",
+				"coords": "44.862040,38.143446"
+			}
+		]
+	},
+	{
+		"city": "Славянск-на-Кубани",
+		"zindex": 4,
+		"center": {
+			"lon": 45.260433,
+			"lat": 38.125147
+		},
+		"points": "45.260433,38.125147",
+		"zoom": 16,
+		"mobile":false,
+		"addresses":[
+			{
+				"image": "/img/fasads/slavyansk.jpg",
+				"address": "ул. Ковтюха, 34",
+				"officeTime": "8:00 — 19:00",
+				"callTime": "8:00 – 20:00",
+				"phone": "+7 (918) 31-65-65-7",
+				"phoneLink": "tel://+79183165657",
+				"coords": "45.260433,38.125147"
+			}
+		]
+	}
+]

@@ -1,0 +1,27 @@
+//= Media queries ========================================
+//= Less, then extra-small	// T (tiny)
+$extra-small: 400px;			// XS (extra-small)
+$small: 600px;						// S (small)
+$medium: 850px;						// M (medium)
+$large: 1200px;						// L (large)
+$extra-large: 1900px;			// XL (extra-large)
+$huge: 1901px;						// H (huge)
+
+//= Columns gutter =======================================
+$cols: 12;								// Column-count
+$gutter-width: 20px;			// Space between columns
+
+$primary: #2979FF;
+$secondary: #26C6DA;
+$text: #333333;
+$paper: #F2F6FD;
+$paperDark: #DDE7F7;
+$fogged: #A6A6A6;
+$menu_hover: rgba(black, .05);
+
+$success: #00aa41;
+$critical: #ff004c;
+$orange: #F2994A;
+
+$border-radius: 8px;
+$padding: 2vmin;

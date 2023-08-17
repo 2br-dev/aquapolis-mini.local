@@ -1,0 +1,501 @@
+body{
+
+	background-color: $paper;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	& main{
+		flex-grow: 1;
+	}
+
+	& .rur-sign{
+		font-size: .91em;
+	}
+
+	& .bttn{
+	
+		background: $primary;
+		color: #fff;
+		padding: 0 15px;
+		line-height: 1.6em;
+		display: inline-block;
+		border-radius: 1.6em;
+	
+		& .mdi{
+			color: #fff;
+		}
+
+		&-outline{
+			@extend .bttn;
+			background-color: transparent;
+			color: $primary;
+			box-shadow: 0 0 0 1px $primary inset;
+
+			&-large{
+				@extend .bttn-outline;
+				font-size: 1.6rem;
+				padding: 0 28px;
+				line-height: 2em;
+			}
+		}
+		
+		&-flat{
+			@extend .bttn-outline;
+			box-shadow: none;
+		}
+	
+		&-large{
+			@extend .bttn;
+			font-size: 1.6rem;
+			padding: 0 28px;
+			line-height: 2em;
+		}
+	}
+
+	& input[type=checkbox].styled{
+
+		display: none;
+
+		& + label{
+
+			user-select: none;
+			cursor: pointer;
+			// white-space: nowrap;
+			max-width: 100%;
+
+			&:before{
+				content: '';
+				display: inline-block;
+				width: .7em;
+				aspect-ratio: 1 / 1;
+				margin-right: 6px;
+				box-shadow: 0 0 0 1px $primary inset, 0 2px 4px rgba(black, .4) inset;
+				border-radius: 2px;
+				transition: box-shadow .2s;
+			}
+		}
+
+		&:checked + label:before{
+			box-shadow: 0 0 0 10px $primary inset;
+		}
+	}
+
+	& input[type=radio].styled{
+
+		display: none;
+
+		& + label{
+
+			cursor: pointer;
+			// white-space: nowrap;
+			max-width: 100%;
+
+			&:before{
+				content: '';
+				display: inline-block;
+				width: .7em;
+				aspect-ratio: 1 / 1;
+				margin-right: 6px;
+				box-shadow: 0 0 0 1px $primary inset, 0 2px 4px rgba(black, .4) inset;
+				border-radius: 50%;
+				transition: box-shadow .2s;
+			}
+		}
+
+		&:checked + label:before{
+			box-shadow: 0 0 0 10px $primary inset;
+		}
+	}
+
+	& .input-container{
+
+		& label{
+
+			display: block;
+			color: $fogged;
+			font-weight: 300;
+			font-size: calc(14px + .2vmax);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+			& ~ input, & ~ textarea{
+				display: block;
+				border: 1px solid #D9D9D9;
+				width: 100%;
+				line-height: 2.5rem;
+				padding: 0 .7rem;
+				border-radius: $border-radius;
+				outline-color: $primary;
+				box-sizing: border-box;
+				font-size: calc(16px + .1vmax);
+			}
+		}
+	}
+
+	& input[type="number"]{
+		
+		border: 0;
+		background: transparent;
+		width: 30px;
+		text-align: center;
+		appearance: textfield;
+		// line-height: 32px;
+	
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+
+	& .hidden{
+		display: none;
+	}
+
+	& .modal{
+
+		& .type{
+			display: flex;
+			flex-wrap: wrap;
+
+			& .type-selector:not(:last-of-type){
+				margin-right: 20px;
+			}
+		}
+
+		& .row{
+			margin-bottom: 0;
+		}
+
+		& .col{
+			padding-bottom: 10px;
+		}
+
+		& .modal-header{
+			font-weight: 800;
+			text-transform: uppercase;
+			margin-top: 0;
+		}
+
+		& .modal-footer{
+			text-align: center;
+			padding-bottom: 60px;
+		}
+
+		& .modal-content{
+
+			position: relative;
+
+			$iconSize: 1.6rem;
+
+			& .modal-close{
+				position: absolute;
+				color: $text;
+				right: 20px;
+				top: 20px;
+				width: $iconSize;
+				height: $iconSize;
+				line-height: $iconSize;
+				font-size: $iconSize;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+				display: inline-block;
+				
+				&:hover{
+					color: $primary;
+				}
+			}
+
+		}
+
+		&#login{
+			width: 400px;
+		}
+
+		&#register{
+
+			& [data-mode="phisical"]{
+
+				& .law{
+					display: none;
+				}
+			}
+		}
+	}
+
+	& .popup-wrapper{
+
+		position: relative;
+	
+		& .popup{
+			border-radius: 4px;
+			overflow: hidden;
+			position: absolute;
+			padding: 0;
+			background: #fff;
+			top: 100%;
+			margin: 0;
+			z-index: 20;
+			box-shadow: 0 2px 4px rgba(black, .4);
+			transition: transform .4s, opacity .2s;
+			transform: translateY(-20px);
+			opacity: 0;
+			pointer-events: none;
+	
+			&.open{
+				transform: none;
+				opacity: 1;
+				pointer-events: all;
+			}
+	
+			&.left{
+				left: 0;
+				text-align: left;
+			}
+	
+			&.right{
+				right: 0;
+				text-align: right;
+			}
+	
+			& li{
+				list-style: none;
+	
+				& a{
+					white-space: nowrap;
+					display: block;
+					width: 100%;
+					min-width: 160px;
+					line-height: 40px;
+					padding: 0 10px;
+					box-sizing: border-box;
+					color: $text;
+					
+					&:hover{
+						background-color: lighten(#ccc, 10) !important;
+					}
+				}
+			}
+		}
+	}
+
+	& .input-field{
+
+		position: relative;
+		padding-top: 15px;
+		margin: 6px 0;
+	
+		& input[type="text"], 
+		& input[type="number"], 
+		& input[type="email"],
+		& input[type="phone"],
+		& input[type="password"],
+		& textarea{
+	
+			&.styled{
+	
+				background: transparent;
+				border: 0;
+				width: 100%;
+				line-height: 30px;
+				display: inline-block;
+		
+				&::placeholder{
+					color: transparent;
+				}
+
+				&:focus{
+					outline: none;
+				}
+		
+				& + label{
+					position: absolute;
+					pointer-events: none;
+					transition: top .2s, color .2s, font-size .2s;
+					left: 0;
+					top: 17px;
+				}
+		
+				&:not(:placeholder-shown), &:focus{
+		
+					& + label{
+						font-size: 10px;
+						top: -5px;
+						color: #888;
+					}
+				}
+			}
+		}
+	
+		& textarea{
+			min-height: 26px;
+			height: fit-content;
+			resize: none;
+			overflow-y: hidden;
+			// transition: height .2s;
+		}
+		
+		&:after{
+			content: '';
+			position: absolute;
+			display: block;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			border-bottom: 1px solid $primary;
+		}
+	
+		& input[type=file]{
+	
+			&.styled{
+	
+				display: none;
+				
+				& + label{
+					display: inline-block;
+					transform: translateY(-6px);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	& ul.product-tabs{
+		border: 1px solid #ccc;
+		box-shadow: 0 4px 12px rgba(black, .1) inset;
+		background-color: $menu_hover;
+		margin: 0;
+		display: flex;
+		border-radius: 2rem;
+		position: relative;
+		overflow: hidden;
+		
+		& .product-tab{
+
+			display: block;
+			position: relative;
+			z-index: 2;
+			
+			& a{
+				display: block;
+				font-size: 1.2rem;
+				line-height: 2em;
+				padding: 0 1em;
+				border-radius: 2rem;
+				transition: background-color .2s;
+				white-space: nowrap;
+				color: $text;
+				font-weight: 500;
+				text-align: center;
+				
+				&:hover{
+					background-color: $menu_hover;
+				}
+
+			}
+			&.active a{
+				color: $primary;
+
+				&:hover{
+					background-color: #fff;
+				}
+			}
+
+			@media(max-width: $medium){
+				flex-grow: 1;
+			}
+		}
+		
+		& .indicator{
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			border-radius: 1.6rem;
+			background: #fff;
+			box-shadow: 0 0 4px rgba(black, .2);
+		}
+	}
+
+	& .tabs-content{
+		padding: 20px 0;
+	}
+
+	& .address-popup-wrapper{
+	
+		& li{
+
+			position: relative;
+			width: fit-content;
+
+			& .address-popup{
+
+				position: absolute;
+				padding: 10px;
+				border-radius: $border-radius;
+				background: #fff;
+				left: 40px;
+				bottom: 100%;
+				transform: translateY(20px);
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity .2s, transform .2s;
+				z-index: 20;
+
+				@media(max-width: $medium){
+					left: -20px;
+					pointer-events: none !important;
+
+					& a{
+						display: none;
+					}
+				}
+
+				& .name{
+					font-weight: 600;
+				}
+
+				& .kv-pair{
+					display: table-row;
+
+					& .key, & .value{
+						display: table-cell;
+						white-space: nowrap;
+					}
+
+					& .key{
+						padding-right: 10px;
+					}
+
+					& .value{
+						font-weight: 500;
+					}
+				}
+				& a{
+					font-weight: 600;
+				}
+			}
+
+			&:hover{
+
+				& > a{
+					text-decoration: underline;
+				}
+
+				& .address-popup{
+					opacity: 1;
+					pointer-events: all;
+					transform: none;
+				}
+			}
+		}
+	}
+
+	& .no-margin{
+		margin: 0 !important;
+	}
+}

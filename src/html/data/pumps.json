@@ -1,0 +1,34 @@
+[
+	{
+		"prefix": "col xl2 offset-xl4 l3 offset-l3 m6 offset-m3 s10 offset-s1 xs12",
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/pump-mechanic.png"
+		],
+		"name":"Помпа механическая",
+		"prices": [
+			{
+				"prefix": "Цена",
+				"value": 370
+			}
+		],
+		"labels":[]
+	},
+	{
+		"prefix": "col xl2 l3 m6 s10 xs12",
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/pump-electric.png"
+		],
+		"name":"Помпа электрическая",
+		"prices": [
+			{
+				"prefix": "Цена",
+				"value": 370
+			}
+		],
+		"labels":[]
+	}
+]

@@ -1,0 +1,657 @@
+[
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/arhyz.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Архыз",
+		"type":{
+			"className":"arthesian",
+			"label":"Артезианская"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/arhyz.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Горгиппия",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/arhyz.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Горная вершина",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/gorny-kluch.png",
+			"/img/bottles/arhyz.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png"
+		],
+		"name":"Горный ключ",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/serebryanaya-kaplya.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Серебряная капля",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/soft-aqua.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Софт-аква",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/troitskaya.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Троицкая",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/chistogornaya.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"#чистоГорная",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/elbrusinka.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Эльбрусинка детская",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/presidium.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Президиум",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/prirodny-istochnik.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Природный источник",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/kubai.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Кубай",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/piligrim.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Пилигрим",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/erivan.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Эривань",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/dombay.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Домбай",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/zhemchuzhina-kavkaza.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Жемчужина Кавказа",
+		"type":{
+			"className":"thawed",
+			"label":"Талая"
+		},
+		"prices": [
+			{
+				"prefix": "1 бут",
+				"value": 370
+			},
+			{
+				"prefix": "от 2х бут",
+				"value": 350
+			},
+			{
+				"prefix": "от 3х бут",
+				"value": 330
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	},
+	{
+		"className": "product",
+		"link": "/product.html",
+		"images":[
+			"/img/bottles/empty-bottle.png",
+			"/img/bottles/gorgippia.png",
+			"/img/bottles/gornaya-vershina.png",
+			"/img/bottles/gorny-kluch.png"
+		],
+		"name":"Пустая тара",
+		"type":{
+			"className":"",
+			"label":""
+		},
+		"prices": [
+			{
+				"prefix": "Цена",
+				"value": 370
+			}
+		],
+		"labels":[
+			{
+				"class":"bestseller",
+				"text": "хит продаж"
+			},
+			{
+				"class":"new",
+				"text": "новинка"
+			}
+		]
+	}
+]

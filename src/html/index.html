@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('./parts/head.html', {title: 'Главная'})
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="main">
+		<section id="section-intro">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 center-align">
+						<h1>Сервис доставки питьевой воды</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section-actions">
+			<div class="container">
+				<div class="center-align">
+					<h2>Выгодно для первого заказа</h2>
+					<p>Если вы ранее пользовались сервисом доставки воды, данные предложения именно для вас!</p>
+				</div>
+			</div>
+			<div class="actions-wrapper">
+				<div class="row flex">
+					<div class="col l2 offset-l1 m3 s12 order-m1 center-align">
+						<div class="actions-nav">
+							<div>
+								<a href="" class="actions-next"></a>
+								<a href="" class="actions-prev"></a>
+								<div class="actions-amount"></div>
+								<div class="amount-progress">
+									<div class="amount-progress-value"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col m9 s12 no-padding">
+						<div class="swiper" id="actions">
+							<div class="swiper-wrapper">
+								@@loop('./parts/action-slide.html', './data/actions.json')
+								@@loop('./parts/action-slide.html', './data/actions.json')
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="background">
+					<div class="col l5 m4 s12 no-padding"><div class="background-rectangle"></div></div>
+				</div>
+			</div>
+		</section>
+		<section id="section-delivery">
+			<div class="container">
+				<div class="row">
+					<div class="col s12">
+						<h2>Заказать воду с доставкой</h2>
+						<p>Есть тара на обмен, тогда просто складывайте в корзину воду! </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<div class="delivery-wrapper">
+							<div class="swiper" id="delivery">
+								<div class="swiper-wrapper">
+									@@loop('./parts/product-card.html', './data/catalog.json')
+								</div>
+							</div>
+							<a href="" class="delivery-prev"></a>
+							<a href="" class="delivery-next"></a>
+							<div class="delivery-pagination-wrapper">
+								<div class="swiper-pagination" id="delivery-pagination"></div>
+								<div class="fraction">
+									<div class="amount"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="section-pickup">
+			<div class="row flex">
+				<div class="col l6 m12 s12 center-align order-l1">
+					<div class="row">
+						<div class="col l10 offset-l1 m10 offset-m1">
+							<h2>Вода на самовывоз</h2>
+							<p>Заберите самостоятельно в наших магазинах</p>
+						</div>
+						<div class="col l10 offset-l1 m10 offset-m1">
+							<div class="pickup-wrapper">
+								<div class="swiper" id="pickup">
+									<div class="swiper-wrapper">
+										@@loop('./parts/product-card.html', './data/catalog-single-price.json')
+									</div>
+								</div>
+								<a href="" class="pickup-prev"></a>
+								<a href="" class="pickup-next"></a>
+								<div class="swiper-pagination" id="pickup-pagination"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col l6 m12 s12 no-padding">
+					<div class="map-wrapper">
+						<div class="cities-wrapper">
+							<a href="" class="city-prev"><i class="mdi mdi-chevron-left"></i></a>
+							<div class="swiper" id="cities">
+								<div class="swiper-wrapper">
+									@@loop('./parts/city.html', './data/cities.json')
+								</div>
+							</div>
+							<a href="" class="city-next"><i class="mdi mdi-chevron-right"></i></a>
+						</div>
+						<div id="map"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="pumps-section">
+			<div class="container">
+				<div class="row">
+					<div class="col center-align">
+						<h2>Помпы для воды</h2>
+						<p>Удобно для дома, офиса и  выезда на природу</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col xl4 offset-xl4 l6 offset-l3 m8 offset-m2 s10 offset-s1 xs12">
+						<div class="swiper" id="pump">
+							<div class="swiper-wrapper">
+								@@loop('./parts/product-card.html', './data/pumps.json')
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('./parts/footer.html')
+	<script src="/js/master.js"></script>
+</body>
+</html>

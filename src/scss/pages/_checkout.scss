@@ -1,0 +1,229 @@
+main#checkout{
+
+	& .basket-wrapper{
+		position: sticky;
+		top: 100px;
+	}
+
+	& .col{
+		padding-bottom: 1vmax;
+	}
+
+	& .form-section-header-wrapper{
+
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+
+		& a{
+			font-size: clamp(16px, 2vw, 18px);
+			font-weight: 300;
+		}
+	}
+
+	& .form-section-header{
+		margin-bottom: .5vmax;
+		font-size: 2rem;
+		color: $fogged;
+	}
+
+	& .form-section{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 1vmax;
+		border-radius: $border-radius;
+		background-color: #fff;
+		margin-bottom: 2vmax;
+		box-shadow: 0 1px 2px rgba(black, .1), 0 2px 4px rgba(black, .1), 0 3px 6px rgba(black, .1), 0 4px 12px rgba(black, .1);
+
+		& .datepicker{
+			background-image: url(../../img/calendar-month.svg);
+			background-size: 20px auto;
+			background-repeat: no-repeat;
+			background-position: right 10px center;
+		}
+
+		& li{
+			& input + label{
+				// white-space: nowrap;
+				max-width: 100%;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+		}
+
+		& #not-recall + label{
+			margin-top: 1em;
+		}
+
+		& .disclamer{
+			font-weight: 300;
+			color: $fogged;
+			font-size: 16px;
+			line-height: 1.4em;
+		}
+
+		& h3{
+			font-size: 1.5rem;
+			margin-bottom: 0;
+		}
+
+		& .cart-content{
+
+			flex-grow: 1;
+
+			& .cart-row{
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				margin-bottom: 10px;
+				padding-bottom: 10px;
+
+				&:not(:last-of-type){
+					border-bottom: 1px solid #D9D9D9;
+				}
+
+				& .cart-image{
+
+					width: 20%;
+					margin-right: 20px;
+
+					& img{
+						width: 100%;
+						height: auto;
+					}
+				}
+
+				& .cart-info{
+					flex-grow: 1;
+					color: $fogged;
+
+					& .name, & .price{
+						font-weight: 800;
+						color: $text;
+					}
+				}
+
+				& .cart-action{
+
+					width: 100%;
+
+					& .bttn-outline{
+						display: block;
+						margin: auto;
+						width: fit-content;
+					}
+					
+					& .button-wrapper{
+						box-shadow: 0 0 0 1px $primary;
+						border-radius: 1rem;
+						display: flex;
+						width: fit-content;
+						margin: auto;
+
+						& a{
+							display: block;
+							aspect-ratio: 1 / 1;
+							flex-shrink: 0;
+							width: 30px;
+							height: 30px;
+							line-height: 30px;
+							text-align: center;
+							border-radius: 50%;
+							background: #fff;
+							z-index: 1;
+							
+							&.delete{
+								border-radius: 0 50px 50px 0;
+								padding-left: 20px;
+								padding-right: 30px;
+								margin-left: -15px;
+								box-sizing: border-box;
+								z-index: 0;
+								background-color: $primary;
+								color: #fff;
+							}
+						}
+
+					}
+
+					@media(max-width: $small){
+						width: 100%;
+						text-align: center;
+					}
+				}
+			}
+		}
+
+		& .cart-summary{
+			border-top: 1px solid #D9D9D9;
+			margin-left: -1vmax;
+			width: calc(100% + 2vmax);
+			text-align: center;
+			font-weight: bold;
+			padding-top: 1vmax;
+
+			& .total{
+				font-size: 2rem;
+			}
+		}
+	}
+
+	& .payments{
+
+		display: flex;
+		flex-wrap: wrap;
+
+		& .payment-input{
+
+			width: 20%;
+			min-width: 200px;
+			display: block;
+			min-height: 100%;
+			flex-grow: 1;
+
+			& input{
+				display: none;
+
+				& ~ label{
+					border: 2px solid #D9D9D9;
+					display: block;
+					margin: 10px;
+					padding: 20px;
+					border-radius: $border-radius;
+					transition: background-color .2s, box-shadow .2s;
+					height: calc(100% - 20px);
+					cursor: pointer;
+					display: flex;
+					align-items: center;
+					line-height: 1.2em;
+
+					@media(max-width: 490px){
+						margin: 10px 0;
+					}
+
+					& a{
+						display: inline;
+					}
+
+					&:before{
+						content: '󰝥';
+						font-family: 'Material Design Icons';
+						color: #B1B1B1;
+						margin-right: 12px;
+					}
+				}
+
+				&:checked ~ label{
+					border-color: $primary;
+					box-shadow: 0 5px 10px rgba(black, .2) inset;
+					background-color: #fefefe;
+
+					&:before{
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+}

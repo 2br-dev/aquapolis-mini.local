@@ -1,0 +1,50 @@
+<div class="city" data-city="@@zindex">
+	<a class="city-trigger waves-effect" href="#!">
+		<span class="name">@@city</span>
+		<i class="arrow mdi mdi-chevron-right"></i>
+	</a>
+	<div class="city-description hidden">
+		<div class="fasad-swiper swiper">
+			<div class="swiper-wrapper">
+				@@if(context.addresses){
+					@@for(let i=0; i<addresses.length; i++){
+						<div class="swiper-slide" data-coord="`+addresses[i].coords+`" data-zoom="@@zoom">
+							<img class="lazy" data-src="` + addresses[i].image + `">
+						</div>
+					}
+				}
+			</div>
+		</div>
+		<div class="description-city">г. @@city</div>
+		<div class="swiper-pagination contacts-swiper-pagination"></div>
+		<div class="fasad-info-swiper swiper">
+			<div class="swiper-wrapper">
+				@@if(context.addresses){
+					@@for(let i=0; i<addresses.length; i++){
+						<div class="swiper-slide">
+							<div class="addressName" data-point="`+addresses[i].coords+`" data-zoom="@@zoom">` + addresses[i].address + `</div>
+							<div class="kv-pair address">
+								<div class="key">Время работы офиса:</div>
+								<div class="value">`+addresses[i].officeTime+`</div>
+							</div>
+							<div class="kv-pair address">
+								<div class="key">Приём заявок по телефону:</div>
+								<div class="value">`+addresses[i].callTime+`</div>
+							</div>
+							<div class="kv-pair address">
+								<div class="key">Телефон:</div>
+								<div class="value"><a href="`+addresses[i].phoneLink+`">`+addresses[i].phone+`</a></div>
+							</div>
+							@@if(context.mobile==true){
+								<div class="kv-pair address">
+									<div class="key">Мобильный:</div>
+									<div class="value">`+addresses[i].mobile+`</div>
+								</div>
+							}
+						</div>
+					}
+				}
+			</div>
+		</div>
+	</div>
+</div>

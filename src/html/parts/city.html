@@ -1,0 +1,8 @@
+@@if(context.addresses){
+	@@for(let i=0; i<addresses.length; i++){
+		<div class="swiper-slide" data-lon="@@center.lon" data-lat="@@center.lat" data-zoom="@@zoom" data-point="`+addresses[i].coords+`">
+			<div class="city">@@city</div>
+			<div class="address">`+addresses[i].address+`</div>
+		</div>
+	}
+}

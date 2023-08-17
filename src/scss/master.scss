@@ -1,0 +1,23 @@
+// Подключение библиотек
+@import './parts/materialize';
+@import '../../node_modules/swiper/swiper.scss';
+@import './parts/materialdesignicons';
+@import './parts/vars';
+@import './parts/custom_grid';
+@import './parts/typography';
+@import './parts/helpers';
+@import './parts/zoomer';
+@import './parts/shops-section';
+@import './parts/products-section';
+@import './parts/select';
+
+@import './parts/header';
+@import './parts/footer';
+
+@import './parts/product-card';
+
+@import './pages/main';
+@import './pages/product';
+@import './pages/checkout';
+@import './pages/profile';
+@import './pages/action';

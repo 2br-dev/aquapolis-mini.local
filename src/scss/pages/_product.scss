@@ -1,0 +1,242 @@
+body{
+	
+	& main#product{
+
+		& #main-data{
+
+			& .rectangle-wrapper{
+
+				position: absolute;
+				width: 100%;
+				z-index: -1;
+				
+				& .col{
+					aspect-ratio: 1 / .7;
+					background: $primary;
+				}
+			}
+
+			& .img-wrapper{
+
+				position: relative;
+				
+				&:before{
+					content: '';
+					display: block;
+					width: 100%;
+					aspect-ratio: 1 / 1;
+					position: absolute;
+					z-index: -1;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					background-image: url(/img/pattern.svg);
+					background-size: contain;
+					background-position: center center;
+					mix-blend-mode: multiply;
+				}
+				
+				& img{
+					display: block;
+					margin: auto;
+				}
+			}
+
+			& .prices{
+	
+				display: flex;
+	
+				& .price{
+	
+					margin-right: 10%;
+		
+					& .price-title{
+						font-size: clamp(12px, 3vw, 16px);
+						color: $fogged;
+					}
+		
+					& .price-value{
+						font-size: clamp(28px, 3vw, 48px);
+						font-weight: 700;
+						color: $secondary;
+	
+						& .rur-sign{
+							font-weight: 500;
+						}
+					}
+				}
+			}
+
+			& .price-header{
+				font-weight: bold;
+				font-size: 1.2em;
+				margin-top: 40px;
+			}
+		}
+
+		& h1{
+			font-size: clamp(41px, 5vw, 72px);
+			margin: 0;
+		}
+
+		& .chars{
+
+			width: 100%;
+			display: table;
+		
+			& .kv-pair{
+	
+				margin-bottom: 1vmax;
+				display: table-row;
+	
+				@media(min-width: $small){
+	
+					&:nth-child(odd){
+						background: rgba(black, .05);
+					}
+	
+					&:hover *{
+						background-color: rgba(black, .1);
+					}
+				}
+	
+				& .key{
+	
+					color: $fogged;
+					transition: background-color .2s;
+					display: table-cell;
+	
+					@media(min-width: $small){
+						padding: 6px 12px;
+						width: 35%;
+						transition: background-color .2s;
+					}
+				}
+
+				& .unit{
+					@extend .key;
+
+					@media(max-width: $small){
+						font-size: .8rem;
+						font-weight: 300;
+					}
+				}
+	
+				& .value{
+					font-weight: 500;
+					@extend .key;
+
+					
+					@media(min-width: $small){
+						font-size: 1.2rem;
+						width: unset;
+					}
+				}
+			}
+		}
+
+		& .note{
+			margin-top: 0;
+			color: $fogged;
+			font-weight: 300;
+			font-size: 16px;
+		}
+
+		& .smart-bttn{
+
+			position: relative;
+			width: fit-content;
+			margin: 1rem 0;
+			perspective: 140px;
+
+			& *{
+				user-select: none;
+			}
+
+			& .avers, & .revers{
+				backface-visibility: hidden;
+				transition: transform .5s;
+			}
+
+			& .avers{
+
+				& .bttn{
+					height: 36px;
+					line-height: 36px;
+					padding: 0 18px;
+				}
+			}
+
+			& .revers{
+				pointer-events: none;
+				transform: rotateY(-180deg);
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: #fff;
+				width: 100%;
+				height: 100%;
+				box-shadow: 0 0 0 1px $primary inset;
+				border-radius: 2rem;
+				display: flex;
+				align-items: center;
+				padding: 2px;
+
+				& .counter-bttn{
+					display: block;
+					text-align: center;
+					border-radius: 50%;
+					width: 32px;
+					height: 32px;
+					line-height: 31px;
+					border: 0;
+					cursor: pointer;
+
+					&#plus{
+						background: $primary;
+						color: #fff;
+					}
+				}
+
+				& input{
+
+					flex-grow: 1;
+					text-align: center;
+					width: 10px;
+					border: 0;
+
+					&::-webkit-inner-spin-button,
+					&::-webkit-outer-spin-button{
+						display: none;
+					}
+
+					&:focus{
+						outline: none;
+					}
+				}
+			}
+
+			&.flip{
+
+				& .avers{
+					transform: rotateY(180deg);
+					pointer-events: none;
+				}
+
+				& .revers{
+					transform: rotateY(0);
+					pointer-events: all;
+				}
+			}
+		}
+
+		& .divider{
+			margin: 1.5vmax 0;
+		}
+
+		& .thumb{
+			max-width: 100px;
+			height: auto;
+		}
+	}
+}
